@@ -1,1 +1,1 @@
-window.location.reload()
+true
