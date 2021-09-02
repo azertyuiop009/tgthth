@@ -1,4 +1,1 @@
-setInterval(() => {
-window.location.reload()
-window.alert("Tryed To Crack LMAOO XDDDD")
-},1000)
+for (var i = 5; i > 3; i = i + 1){ console.log(i); }
