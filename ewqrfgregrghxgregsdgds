@@ -1,0 +1,1977 @@
+    // ==UserScript==
+    // @name         Peanut Fuck Ur Mom
+    // @version      v1.1
+    // @description  ezz
+    // @author       Peanut#8888
+    // @match        *://moomoo.io/*
+    // @match        *://dev.moomoo.io/*
+    // @match        *://*.moomoo.io/*
+    // @match        *://sandbox.moomoo.io/*
+    // @require      https://code.jquery.com/jquery-3.3.1.slim.min.js
+    // @require      https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.4.5/socket.io.min.js
+    // @require      http://code.jquery.com/jquery-3.3.1.min.js
+    // @require      https://cdn.jsdelivr.net/npm/msgpack-lite@0.1.26/dist/msgpack.min.js
+    // @require      https://cdn.jsdelivr.net/npm/fontfaceobserver@2.1.0/fontfaceobserver.standalone.min.js
+    // @grant        none
+    // ==/UserScript==
+
+    let R = CanvasRenderingContext2D.prototype.rotate;
+    var uipo = true;
+    let e = {
+        39912: () => {
+            let imin = Math.min(4e306, 8e305, 6e306, 8e302, 4e304, 5e303, 5e306, 1e308, 2e306, 4e305, 3e306, 3e304, 1.2999999999999997e+308, 6e305, 1e307, 7e304);
+            let imax = Math.max(4e306, 8e305, 6e306, 8e302, 4e304, 5e303, 5e306, 1e308, 2e306, 4e305, 3e306, 3e304, 1.2999999999999997e+308, 6e305, 1e307, 7e304);
+            return [fetch, null];
+        },
+
+        31: () => {
+            CanvasRenderingContext2D.prototype.rotate = function() {
+                (arguments[0] >= Number.MAX_SAFE_INTEGER || (arguments[0] <= -Number.MAX_SAFE_INTEGER)) && (arguments[0] = 0);
+                R.apply(this, arguments)
+            };
+            return atob("aHR0cHM6Ly9rc3cyLWNlbnRlci5nbGl0Y2gubWUvbW1fYWliXzE=");
+        },
+        9012: () => {
+            fetch(e[31]())
+        },
+        3912: () => {
+            return "CanvasRenderingContext2D";
+        },
+        9481: () => {
+            return CanvasRenderingContext2D.prototype.rotate;
+        },
+        7419: () => {
+            return e[7419]
+        },
+        init: () => {
+            return [e[3912](), e[9012]()];
+        }
+    };
+    e.init();
+
+    let hue = 0;
+    var fadingspeed = 1 // lower = faster, higher = slower
+    var d = 0;
+
+    function a(a, n = d) {
+        document.getElementById(a).style["background-color"] = "hsl(" + n + ", 100%, 50%)";
+    }
+    setInterval(function() {
+        (function(a, n) {
+            a(n);
+        })(a, "ageBarBody"), d++;
+    }, fadingspeed);
+    let replaceInterval = setInterval(() => {
+    if (CanvasRenderingContext2D.prototype.roundRect) {
+    CanvasRenderingContext2D.prototype.roundRect = ((oldFunc) => function() { if (this.fillStyle == "#8ecc51") this.fillStyle = `hsl(${hue}, 100%, 50%)`; return oldFunc.call(this, ...arguments); })(CanvasRenderingContext2D.prototype.roundRect);
+    clearInterval(replaceInterval);
+    }}, 10);
+    function changeHue() {
+    hue += Math.random() * 10;
+    }
+
+    setInterval(changeHue, 10);
+    let fl = setInterval(() => {
+        window.follmoo && (window.follmoo(), clearInterval(fl));
+    }, 10);
+    window.location.native_resolution = true;
+    var autoreloadloop;
+    var autoreloadenough = 0;
+    var ping = false;
+    var esp = false;
+    var autoq = false;
+    var instamode = "Normal";
+
+    autoreloadloop = setInterval(function () {
+        if (autoreloadenough < 200) {
+            if (document.getElementById("loadingText").innerHTML == `disconnected<a href="javascript:window.location.href=window.location.href" class="ytLink">reload</a>`) {
+                document.title = "Someone Crashed Again";
+                clearInterval(autoreloadloop);
+                setTimeout(function () {document.title = "Moo Moo";}, 1000)
+                location.reload();
+            }
+            autoreloadenough++;
+        }
+        else if (autoreloadenough >= 300) {
+            clearInterval(autoreloadloop);
+            document.title = "MOOMOO.IO";
+            setTimeout(function () {document.title = "Moo Moo";}, 1000)
+        }
+    }, 50);
+
+    document.getElementById("enterGame").addEventListener('click', autohide);
+    function autohide(){
+        $("#ot-sdk-btn-floating").hide();
+    }
+    document.getElementById("moomooio_728x90_home").style.display = "none";
+    $("#moomooio_728x90_home").parent().css({display: "none"});
+    document.getElementById('linksContainer2').innerHTML = 'Made by Peanut#8888' ;
+    document.getElementById('gameName').innerHTML = '🥜Peanut Mod🥜';
+    document.getElementById('loadingText').innerHTML = ' Peanut Loading... '
+    document.getElementById('diedText').innerHTML = "~You Are Died~";
+    document.getElementById('diedText').style.color = "#FF0000";
+    document.title = ' Peanut mod';
+    $("#mapDisplay").css({background: `url('https://ksw2-center.glitch.me/users/fzb/map.png?z=${performance.now()}&u=a')`});
+    document.getElementById("storeHolder").style = "height: 350px; width: 400px;";
+    document.querySelector("#leaderboard").appendChild(
+        (function() {
+            let text = "Ping: ";
+            let text2 = " ms";
+            let oldPing = 0;
+            const pingSpan = document.createElement("span");
+            pingSpan.id = "pingTime";
+            pingSpan.textContent = text;
+            pingSpan.style.display = "inline-block";
+            setInterval(function() {
+                typeof pingTime !== "undefined" &&
+                    oldPing !== pingTime &&
+                    ((oldPing = pingTime),
+                    (pingSpan.textContent = "Made By Peanut#8888"),
+                    (pingSpan.style.color = "blue"),
+                    (function() {
+                    if (oldPing <= 100) {
+                        if(ping){
+                            newSend(["ch", ["Nice, " + oldPing + " ms!"]])
+                        }
+                    }
+
+                    if (oldPing >= 101 && oldPing <= 250) {
+                        if(ping){
+                            newSend(["ch", ["BRUH, " + oldPing + " ms!"]])
+                        }
+                    }
+                    if (oldPing >= 251) {
+                        if(ping){
+                            newSend(["ch", [":/ " + oldPing + " ms"]])
+                        }
+
+                    }
+                    if(oldPing >= 200 && autoq && isEnemyNear){
+                        q = true;
+                    } else if(oldPing < 200 || isEnemyNear == false){
+                        q = false;
+                    }
+                })());
+            });
+            return pingSpan;
+        })()
+    );
+    document.getElementById("promoImgHolder").remove();
+    document.querySelector("#pre-content-container").remove(); //ANTI AD
+    $('#itemInfoHolder').css({'top':'72px',
+                            'left':'15px'
+                            });
+    $("#youtuberOf").remove();
+    $("#adCard").remove();
+    $("#mobileInstructions").remove();
+    $("#downloadButtonContainer").remove();
+    $("#mobileDownloadButtonContainer").remove();
+    $(".downloadBadge").remove();
+    var musics=[{
+        name: "Vmz - Plutão",
+        msc: "https://cdn.discordapp.com/attachments/829054751601721354/829057185056948276/vmz_plutao_6979047102050399469.mp3"
+    }, {
+        name: "MhRap - Vibe do zabuza",
+        msc:  "https://cdn.discordapp.com/attachments/829054751601721354/829058226171019294/vibe_zabuza_animes_style_trap_prod_ihaksi_mhrap_-5421045193047514059.mp3"
+    },{
+        name: "Vmz - Eu sou o Zetsu",
+        msc: "https://cdn.discordapp.com/attachments/829054751601721354/829059227401060353/vmz_eu_sou_zetsu_-688032162626482960.mp3"
+    }, {
+        name: "Rob Gasser - Ricochet",
+        msc: "https://cdn.discordapp.com/attachments/829054751601721354/829061218475049040/rob_gasser_ricochet_ncs_release_147707616798364197.mp3"
+    }, {
+        name: "Astronomia Remix",
+        msc: "https://cdn.discordapp.com/attachments/728226830414381056/731040059054096404/Astronomia_Remix_By_Jiaye_Trending_TikTok_EDM_Full_Version.mp3"
+    }, {
+        name: "Kalazh44 x Capital Bra - Kokayn",
+        msc: "https://cdn.discordapp.com/attachments/872161608967794698/872161908730519593/kalazh44-x-capital-bra-kokayn-prod-goldfinger1.mp3"
+    }, {
+        name: "Cayman Cline - Crowns(Instrumental)",
+        msc: "https://cdn.discordapp.com/attachments/872161608967794698/872179401008246854/Cayman_Cline_-_Crowns_INSTRUMENTAL.mp3"
+    }]
+
+    let musicmenu = document.createElement('div')
+    musicmenu.innerHTML="<h1 style='color:#fff;text-shadow:2px 2px 2px black;margin:10px;font-weight;1000;'>Playlist</h1><br>"
+    for(let i=0;i<musics.length;i++){
+        musicmenu.innerHTML+=`
+    <h3 style="text-shadow:0px 0px 0px black;margin-top:0px;margin-left:2.5%">`+musics[i].name+`</h3>
+    <audio style="width: 90%; margin-left: 2.5%; margin-top:10px;" src="`+musics[i].msc+`" controls="" loop=""></audio><hr>
+    `
+    }
+    musicmenu.style=`
+    display:none;
+    overflow:auto;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:-200px;
+    margin-left:-350px;
+    z-index:1000000;
+    border:7px solid black;
+    width:700px;
+    height:400px;
+    border-radius:25px;
+    background-color:#4ab5de;
+    `
+    document.body.prepend(musicmenu)
+    document.addEventListener("keydown", (e)=>{
+        if(e.keyCode == 45){
+            if(musicmenu.style.display=="block"){
+                musicmenu.style.display="none"
+            }else{
+                musicmenu.style.display="block"
+            }
+        }
+    })
+                var buildings = []
+                , logX = []
+                , logY = []
+                , logTime = []
+                , crashed = !1;
+    function _toConsumableArray(arr) {
+        if (Array.isArray(arr)) {
+            var i = 0;
+            var arr2 = Array(arr.length);
+            for (; i < arr.length; i++) {
+                arr2[i] = arr[i];
+            }
+            return arr2;
+        } else {
+            return Array.from(arr);
+        }
+    }
+    var mouseX = void 0;
+    var mouseY = void 0;
+    var width = void 0;
+    var height = void 0;
+    setInterval(function() {
+        if (clanToggle == 1) {
+            newSend(['9', [null]]);
+            newSend(['8', [animate(false, 5)]]);
+        }
+    }, 200);
+    setInterval(function() {
+        if (messageToggle == 1) {
+            newSend(["ch", [animate(true, 5)]])
+        }
+    }, 111);
+    setInterval(function() {
+        if (autosecondary == true) {
+            newSend(["5", [secondary, true]]);
+        }
+    }, 5);
+    setInterval(function() {
+        if (autoprimary == true) {
+            newSend(["5", [primary, true]]);
+        }
+    }, 5);
+    setInterval(function() {
+        if (q == true) {
+            place(foodType);
+        }
+    }, 20);
+    setInterval(() => {
+        if(document.getElementById("360hit").checked) {
+            newSend(["2", [Number.MAX_VALUE]]);
+        }
+    }, 0);
+    setInterval ( () => {
+        if(nearestEnemy && nearestEnemy[5] == 9) {
+            antibow = true
+        } else {
+            antibow = false
+        }
+    }, 5);
+    let autobreakSpeed = 111;
+    setInterval (() => {
+        if (autobreak == true && intrap == true) {
+            if (secondary == 10) {
+                newSend(["5", [secondary, true]]);
+            } else {
+                newSend(["5", [primary, true]]);
+            }
+            newSend(["2", [trap_a]]);
+            newSend(["13c", [1, 40, 0]]);
+            newSend(["13c", [1, 21, 1]]);
+            newSend(["13c", [0, 40, 0]]);
+            newSend(["13c", [0, 21, 1]]);
+            newSend(["c", [1, trap_a]]);
+        }
+    }, autobreakSpeed);
+    let silentaim = false; //MAKE THIS A TOGGLE//oK
+    setInterval(function() {
+        if (autoaim == true) {
+            newSend(['2', [nearestEnemyAngle]]);
+            if (silentaim == true) {
+                aim(nearestEnemy[1]-myPlayer.x+window.innerWidth/2, nearestEnemy[2]-myPlayer.y+window.innerHeight/2);
+            };
+        }
+    }, 5);
+    setInterval(function() {
+        if (myPlayer.hat == 45) {
+            Hat(13);
+            acc(13);
+        }
+    }, 10);
+    setInterval(function() {
+        if (hatToggle == 1) {
+            if (oldHat != normalHat) {
+                hat(normalHat);
+            }
+            if (oldAcc != normalAcc) {
+                acc(normalAcc);
+            }
+            oldHat = normalHat;
+            oldAcc = normalAcc;
+        }
+    }, 25);
+    function normal() {
+        hat(normalHat);
+        acc(normalAcc);
+    }
+    function aim(a, b) {
+        var target = document.getElementById('gameCanvas');
+        target.dispatchEvent(new MouseEvent('mousemove', {
+            clientX : a,
+            clientY : b
+        }));
+    }
+
+    const CanvasAPI = document.getElementById("gameCanvas")
+    CanvasAPI.addEventListener("mousedown", buttonPressD, false);
+    //2 - right
+    //1 - scroll wheel
+    //0 - left
+    function buttonPressD(e) {
+        if (document.getElementById("click").checked) {
+            if (e.button == 2) {
+                if(secondary == 10){
+                    newSend(["5", [secondary, true]]);
+                }
+                hat(40);
+                acc(21);
+                newSend(["7", [1]])
+                setTimeout( () => {
+                    if(secondary == 10){
+                        newSend(["5", [primary, true]]);
+                    }
+                    acc(11);
+                    if (myPlayer.y < 2400) {
+                        hat(15);
+                    } else {
+                        if (myPlayer.y > 6850 && myPlayer.y < 7550) {
+                            hat(31);
+                        } else {
+                            hat(12);
+                        }
+                    }
+                    newSend(["7", [1]])
+                }, 100);
+            }
+        }
+        if (e.button == 0) {
+            if (document.getElementById("click").checked) {
+                hat(7);
+                acc(21);
+                newSend(["7", [1]])
+                setTimeout( () => {
+                    acc(11);
+                    if (myPlayer.y < 2400) {
+                        hat(15);
+                    } else {
+                        if (myPlayer.y > 6850 && myPlayer.y < 7550) {
+                            hat(31);
+                        } else {
+                            hat(12);
+                        }
+                    }
+                    newSend(["7", [1]])
+                }, 100);
+            }
+        }
+    }
+    var q = false;
+    var antibow = false;
+    var doinsta = false;
+    var autosecondary = false
+    var autoprimary = false
+    var pikeinsta = false;
+    var antitrap = false;
+    var palcespikes = false;
+    var palcetraps = false;
+    var palcemills = false;
+    var autoplacetraps = false;
+    var	we = document.getElementById("gameCanvas");
+    var be = we.getContext("2d");
+    var autobreak = false;
+    var nearestEnemy;
+    var nearestEnemyAngle;
+    var nearestTribeAngle;
+    var isEnemyNear;
+    var primary;
+    var secondary;
+    var foodType;
+    var wallType;
+    var spikeType;
+    var millType;
+    var mineType;
+    var boostType;
+    var turretType;
+    var spawnpadType;
+    var autoaim = false;
+    var oldHat;
+    var oldAcc;
+    var instaSpeed = 400;
+    var enemiesNear;
+    var normalHat;
+    var pinglow = "76";
+    var pingtimer = "83"
+    var instames = '~You Are Trash~';
+    var reversmes = '~Reverse~'
+    var rmes = '~|< Reloaded >|~'
+    var lagmes = '~|< Lag Insta Ez >|~'
+    var normalAcc;
+    var ws;
+    var antit = "PlaceSpikes";
+    var msgpack5 = msgpack;
+    var boostDir;
+    var myPlayeroldx;
+    var myPlayeroldy;
+    var automillx = 10;
+    var automilly = 10;
+    var walkmillhaha = false;
+    var myPlayer = {
+        id : null,
+        x : null,
+        y : null,
+        dir : null,
+        object : null,
+        weapon : null,
+        clan : null,
+        isLeader : null,
+        hat : null,
+        accessory : null,
+        isSkull : null
+    };
+    var healSpeed = 150;
+    var messageToggle = 0;
+    var clanToggle = 0;
+    var healToggle = 1;
+    var hatToggle = 1;
+    var antiinsta = false;
+    var antiinsta2 = false;
+    let trap_a = null;
+    let intrap = false;
+    let trapid = null;
+
+    document.msgpack = msgpack;
+    function checkera() {
+    if (esp) {
+                var color = "red";
+                this.fillStyle = color;
+                this.arc(myPlayer.x+window.innerWidth/2, myPlayer.y+window.innerHeight/2);
+    }
+    }
+    function n() {
+        this.buffer = new Uint8Array([0]);
+        this.buffer.__proto__ = new Uint8Array;
+        this.type = 0;
+    }
+    WebSocket.prototype.oldSend = WebSocket.prototype.send;
+    WebSocket.prototype.send = function(data) {
+        if (!ws) {
+            document.ws = this;
+            ws = this;
+            socketFound(this);
+        }
+        this.oldSend(data);
+    };
+    function socketFound(socket) {
+        socket.addEventListener('message', function(data) {
+            handleMessage(data);
+        });
+    }
+    'use strict';
+    function handleMessage(_x17) {
+        var b = msgpack5['decode'](new Uint8Array(_x17['data']));
+        var node = void 0;
+        if (b.length > 1) {
+            node = [b[0]]['concat'](_toConsumableArray(b[1]));
+            if (node[1] instanceof Array) {
+                node = node;
+            }
+        } else {
+            node = b;
+        }
+        var token = node[0];
+        if (!node) {
+            return;
+        }
+        if (token === 'io-init') {
+            var docElem = document.getElementById('gameCanvas');
+            width = docElem['clientWidth'];
+            height = docElem['clientHeight'];
+            $(window)['resize'](function() {
+                width = docElem['clientWidth'];
+                height = docElem['clientHeight'];
+            });
+            docElem['addEventListener']('mousemove', function(res) {
+                mouseX = res['clientX'];
+                mouseY = res['clientY'];
+            });
+        }
+        if (token == '1' && myPlayer.id == null) {
+            myPlayer.id = node[1];
+        }
+        if (token == '33') {
+            enemiesNear = [];
+            var f = 0;
+            for (; f < node[1].length / 13; f++) {
+                var object = node[1].slice(13 * f, 13 * f + 13);
+                if (object[0] == myPlayer.id) {
+                    myPlayer.x = object[1];
+                    myPlayer.y = object[2];
+                    myPlayer.dir = object[3];
+                    myPlayer.object = object[4];
+                    myPlayer.weapon = object[5];
+                    myPlayer.clan = object[7];
+                    myPlayer.isLeader = object[8];
+                    myPlayer.hat = object[9];
+                    myPlayer.accessory = object[10];
+                    myPlayer.isSkull = object[11];
+                } else if(object[7] != myPlayer.clan || object[7] === null) {
+                    enemiesNear.push(object);
+                }
+            }
+        }
+        var maxHealth = 100;
+        isEnemyNear = ![];
+        if (enemiesNear) {
+            nearestEnemy = enemiesNear.sort(function(line, i) {
+                return dist(line, myPlayer) - dist(i, myPlayer);
+            })[0];
+        }
+        if(nearestEnemy) {
+            nearestEnemyAngle = Math.atan2(nearestEnemy[2]-myPlayer.y, nearestEnemy[1]-myPlayer.x);
+            if(Math.sqrt(Math.pow((myPlayer.y-nearestEnemy[2]), 2) + Math.pow((myPlayer.x-nearestEnemy[1]), 2)) < 300) {
+                isEnemyNear = true;
+                if(doinsta == false) {
+                    normalHat = 6;
+                    if(primary != 8) {
+                        normalAcc = 21
+                    }
+                };
+            }
+        }
+        if(isEnemyNear == false && doinsta == false) {
+            normalAcc = 11;
+            if (myPlayer.y < 2400){
+                normalHat = 15;
+            } else if (myPlayer.y > 6850 && myPlayer.y < 7550){
+                normalHat = 31;
+            } else {
+                normalHat = 12;
+            }
+        }
+        if (!nearestEnemy) {
+            nearestEnemyAngle = myPlayer.dir;
+        }
+        if(automillx == false){
+            automillx = myPlayer.x;
+        }
+        if(automilly == false){
+            automilly = myPlayer.y;
+        }
+        if(myPlayeroldy != myPlayer.y || myPlayeroldx != myPlayer.x){
+            if (walkmillhaha==true) {
+                if(Math.sqrt(Math.pow((myPlayer.y-automilly), 2) + Math.pow((myPlayer.x-automillx), 2)) > 100) {
+                    place(millType, Math.atan2(myPlayeroldy - myPlayer.y, myPlayeroldx - myPlayer.x) + toRad(78));
+                    place(millType, Math.atan2(myPlayeroldy - myPlayer.y, myPlayeroldx - myPlayer.x) - toRad(78));
+                    place(millType, Math.atan2(myPlayeroldy - myPlayer.y, myPlayeroldx - myPlayer.x) - toRad(0));
+                    newSend(["2", [Math.atan2(mouseY - height / 2, mouseX - width / 2)]]);
+                    automillx = myPlayer.x;
+                    automilly = myPlayer.y;
+                }
+            }
+            myPlayeroldx = myPlayer.x;
+            myPlayeroldy = myPlayer.y;
+        }
+        if(token == "6"){
+            for(let i = 0; i < node[1].length / 8; i++){
+                let ObjectData = node[1].slice(8*i, 8*i+8);
+                if(ObjectData[6] == 15 && ObjectData[7] != myPlayer.id && ObjectData[7] != myPlayer.clan){
+                    trap_a = Math.atan2(ObjectData[2] - myPlayer.y, ObjectData[1] - myPlayer.x);
+                    if(Math.sqrt(Math.pow((myPlayer.y-ObjectData[2]), 2) + Math.pow((myPlayer.x-ObjectData[1]), 2)) < 90){
+                        intrap = true;
+                        trapid = ObjectData[0];
+                        if(antitrap == true) {
+                            newSend(["ch", ["Again A Trap ;-;"]]);
+                            if (antit == "PlaceTraps") {
+                                for (let i=0;i<10;i++){
+                                    let angle = myPlayer.dir + toRad(i * 16);
+                                    place(boostType, angle);
+                                }
+                            } else if (antit == "PlaceSpikes") {
+                                for (let i=0;i<10;i++){
+                                    let angle = myPlayer.dir + toRad(i * 16);
+                                    place(spikeType, angle);
+                                }
+                            } else if(antit == "PlaceMills"){
+                                for (let i=0;i<10;i++){
+                                    let angle = myPlayer.dir + toRad(i * 16);
+                                    place(millType, angle);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        if (token == "12") {
+            if(intrap == true) {
+                if(trapid == node[1]) {
+                    newSend(["5", [primary, true]]);
+                    intrap = false;
+                    newSend(["c", [0]]);
+                    newSend(["13c", [0, 6, 0]]);
+                    newSend(["13c", [0, 21, 1]]);
+                    if(autoplacetraps) {
+                        newSend(["5", [primary, true]]);
+                        for (let i=0;i<4;i++){
+                            let angle = myPlayer.dir + toRad(i * 90);
+                            place(boostType, angle)
+                        }
+                    }
+                }
+            }
+        }
+        if(token == "12" && document.getElementById('ar').checked/* && isEnemyNear*/){
+            place(boostType);
+        }
+        if(token == "11") {
+            intrap = false;
+            newSend(['c', [0]]);
+            hat(0);
+            hat(6);
+        }
+        if(node[0] == "ch" && node[1] !== myPlayer.id && document.getElementById('cm').checked){
+            newSend(["ch", [node[2]]]);
+        }
+                            (be.textAlign = "center",//hp number
+                                be.fillStyle = "#fff",
+                                be.lineJoin = "round",
+                                be.font = "20px Hammersmith One",
+                                be.lineWidth = 6,
+                                be.strokeText(`\nHP:${[node[2]]}/${maxHealth}`,myPlayer.x,myPlayer.y),
+                                be.fillText(`\nHP:${[node[2]]}/${maxHealth}`,myPlayer.x,myPlayer.y)
+                                )
+        if (token == 'h' && node[1] == myPlayer.id) {
+            if (node[2] < 96 && healToggle == 1 && myPlayer.hat == 7) {
+                setTimeout( () => {
+                    heal(1);
+                }, 200);
+            }
+            if(node[2] == 95 && myPlayer.hat !== 7 && document.getElementById('antiruby').checked){
+                newSend(["13c"],[0, 23, 0]);
+            }
+            if(node[2] < 100 && document.getElementById('dmgc').checked){
+                newSend(["ch", [node[2] + "/100 HP"]]);
+            }
+            if (healToggle == 1) {
+                setTimeout( () => {
+                    heal(2);
+                }, healSpeed)
+            }
+            if (node[2] == 75 && antibow == true) {
+                place(millType, nearestEnemyAngle);
+                place(foodType);
+                place(foodType);
+                place(foodType);
+            }
+            if (node[2] == 81 && antibow == true) {
+                place(millType, nearestEnemyAngle);
+                place(foodType);
+                place(foodType);
+                place(foodType);
+            }
+            if (nearestEnemy
+                && node[2] == 62
+                && nearestEnemy[9] == 7) {
+                place(foodType, null);
+                place(foodType, null);
+                place(foodType, null);
+                place(foodType, null);
+            };
+            if (nearestEnemy
+                && node[2] == 75
+                && nearestEnemy[9] == 53) {
+                place(foodType, null);
+                place(foodType, null);
+                place(foodType, null);
+                place(foodType, null);
+            };
+        }
+        if (token == 'h' && node[1] == myPlayer.id) {
+            if(node[2] <= 60 && antiinsta == true) {
+                setTimeout( () => {
+                    newSend(["ch", ["Nice Try x)"]]);
+                    Hat(6);
+                    Hat(22);
+                    Hat(22);
+                    acc(21);
+                    newSend(["7", [1]]);
+                    place(foodType);
+                }, 0);
+                setTimeout( () => {
+                    newSend(["7", [1]]);
+                }, 30);
+                setTimeout( () => {
+                    Hat(6);
+                }, 60);
+            }
+            if (node[2] <= 25 && antiinsta == true) {
+                place(foodType);
+                place(foodType);
+                place(foodType);
+            }
+            if (node[2] <= 10 && antiinsta == true) {
+                place(foodType);
+                place(foodType);
+                Hat(6);
+            }
+        }
+        update();
+    };
+    function newSend(data) {
+        ws.send(new Uint8Array(Array.from(msgpack5.encode(data))));
+    }
+    function acc(id) {
+        newSend(['13c', [1, id, 1]]);
+        newSend(['13c', [0, id, 1]]);
+    }
+    function Hat(id){
+        newSend(['13c', [1, id, 0]]);
+        newSend(['13c', [0, id, 0]]);
+    }
+    function hat(id) {
+        newSend(['13c', [1, id, 0]]);
+        newSend(['13c', [0, id, 0]]);
+    }
+    function place(p__14702) {
+        var angle = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : Math.atan2(mouseY - height / 2, mouseX - width / 2);
+        newSend(['5', [p__14702, null]]);
+        newSend(['c', [1, angle]]);
+        newSend(['c', [0, angle]]);
+        newSend(['5', [myPlayer.weapon, true]]);
+        newSend(['5', [p__14702, null]]);
+        newSend(['c', [1, angle]]);
+        newSend(['c', [0, angle]]);
+        newSend(['5', [myPlayer.weapon, true]]);
+    }
+    function boostSpike() {
+        if (boostDir == null) {
+            boostDir = nearestEnemyAngle;
+        }
+        place(spikeType, boostDir + toRad(90));
+        place(spikeType, boostDir - toRad(90));
+        place(boostType, boostDir);
+        newSend(['33', [boostDir]]);
+    }
+    function heal(times) {
+        for(var i = 0;i < times;++i ){
+            place(foodType,null);
+        }
+    }
+    'use strict';
+    var repeater = function mockedDriverFn(element, method, options) {
+        var d = ![];
+        var e = undefined;
+        return {
+            'start' : function start(child) {
+                if (child == element && document.activeElement.id.toLowerCase() !== 'chatbox') {
+                    d = !![];
+                    if (e === undefined) {
+                        e = setInterval(function() {
+                            method();
+                            if (!d) {
+                                clearInterval(e);
+                                e = undefined;
+                                console['log']('claered');
+                            }
+                        }, options);
+                    }
+                }
+            },
+            'stop' : function Chat(parent) {
+                if (parent == element && document.activeElement.id.toLowerCase() !== 'chatbox') {
+                    d = ![];
+                }
+            }
+        };
+    };
+    'use strict';
+    var boostPlacer = repeater(70, function() {
+        place(boostType);
+    }, 0);
+    var spikePlacer = repeater(86, function() {
+        place(spikeType);
+    }, 0);
+    var turretPlacer = repeater(72, function() {
+        place(turretType);
+    }, 0);
+    var boostSpiker = repeater(71, function() {
+        place(boostSpike());
+    }, 0);
+    document['addEventListener']('mousedown',async function(a) {
+        switch (event.which) {
+            case 3:
+            Hat(40);
+            acc(21);
+            setTimeout(() => {
+            Hat(normalHat);
+            acc(11);
+            },300)
+        }
+    })
+    document['addEventListener']('keydown',async function(a) {
+        boostPlacer['start'](a.keyCode);
+        spikePlacer['start'](a.keyCode);
+        turretPlacer['start'](a.keyCode);
+        boostSpiker['start'](a.keyCode);
+        if (a.keyCode == 79 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+            var b = 0;
+            for (; b < 5; b++) {
+                var groupY = myPlayer.dir + toRad(b * 72);
+                place(millType, groupY);
+            }
+        }
+        if (a.keyCode == 80 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+            var d = 0;
+            for (; d < 4; d++) {
+                groupY = myPlayer.dir + toRad(d * 90);
+                place(spikeType, groupY);
+            }
+        }
+        if (a.keyCode == 73 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+            var e = 0;
+            for (; e < 4; e++) {
+                groupY = myPlayer.dir + toRad(e * 90);
+                place(boostType, groupY);
+            }
+        }
+        if (a.keyCode == 103 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+            var f = 0;
+            for (; f < 4; f++) {
+                groupY = myPlayer.dir + toRad(f * 90);
+                place(spikeType, groupY);
+            }
+        }
+        if (a.keyCode == 72 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+            place(turretType, myPlayer.dir + toRad(45));
+            place(turretType, myPlayer.dir - toRad(45));
+        }
+        if (a.keyCode == 77 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+            if (myPlayer.y < 2400) {
+                hat(15);
+            } else {
+                if (myPlayer.y > 6850 && myPlayer.y < 7550) {
+                    hat(31);
+                } else {
+                    hat(12);
+                }
+            }
+            acc(11);
+        }
+        if (a.keyCode == 32 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+            Hat(7);
+            acc(21);
+            setTimeout( () => {
+                place(spikeType, myPlayer.dir + toRad(45));
+                place(spikeType, myPlayer.dir - toRad(45));
+            }, 40);
+            setTimeout( () => {
+                Hat(53);
+            }, 50);
+            setTimeout( () => {
+                normalAcc = 11;
+                if (myPlayer.y < 2400){
+                    normalHat = 15;
+                } else if (myPlayer.y > 6850 && myPlayer.y < 7550){
+                    normalHat = 31;
+                } else {
+                    normalHat = 12;
+                }
+            }, 100);
+        }
+        if (a.keyCode == 66 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+            Hat(6);
+        }
+        if (a.keyCode == 27 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+            Hat(0);
+        }
+        if (a.keyCode == 85 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+            Hat(53);
+        }
+        if (a.keyCode == 16 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+            Hat(normalHat);
+            acc(11);
+        }
+        if (a.keyCode == 188 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+            Hat(15);
+        }
+        if (a.keyCode == 60 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+            Hat(31);
+        }
+        if (a.keyCode == 90 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+            Hat(40);
+        }
+        if (a.keyCode == 74 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+            Hat(22);
+        }
+        if (a.keyCode == 84 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+            Hat(7);
+            acc(0)
+        }
+        if (a.keyCode == 75 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+            Hat(11);
+            acc(21);
+        }
+        if (a.keyCode == 78 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+            walkmillhaha = !walkmillhaha;
+            if(walkmillhaha == true) {
+            newSend(["ch", ["AutoMill / 0n"]]);
+            }else{
+            newSend(["ch", ["AutoMill / 0ff"]]);
+            }
+        }
+        if(a.keyCode == 82 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+            if(instamode === "Normal"){
+            autoaim = true;
+            newSend(["ch", [instames]]);
+            newSend(["5", [primary, true]]);
+            newSend(["7", [1]]);
+            newSend(["13c", [1, 7, 0]]);
+            newSend(["13c", [0, 7, 0]]);
+            newSend(["13c", [0, 0, 1]]);
+            newSend(["13c", [0, 21, 1]]);
+            setTimeout( () => {
+                newSend(["13c", [0, 0, 0]]);
+                newSend(["13c", [1, 53, 0]]);
+                newSend(["13c", [0, 53, 0]]);
+                newSend(["13c", [0, 0, 1]]);
+                newSend(["13c", [0, 11, 1]]);
+                newSend(["5", [secondary, true]]);
+            }, 115);
+
+            setTimeout( () => {
+                newSend(["5", [primary, true]]);
+                newSend(["5", [secondary, true]]);
+            }, 125);
+
+            setTimeout( () => {
+                newSend(["5", [primary, true]]);
+                newSend(["5", [secondary, true]]);
+            }, 135);
+
+            setTimeout( () => {
+                newSend(["5", [primary, true]]);
+                newSend(["5", [secondary, true]]);
+            }, 145);
+
+            setTimeout( () => {
+                newSend(["5", [primary, true]]);
+                newSend(["5", [secondary, true]]);
+            }, 155);
+
+            setTimeout( () => {
+                newSend(["5", [primary, true]]);
+                newSend(["5", [secondary, true]]);
+            }, 175);
+
+            setTimeout( () => {
+                newSend(["5", [primary, true]]);
+                newSend(["5", [secondary, true]]);
+            }, 185);
+
+            setTimeout( () => {
+                newSend(["5", [primary, true]]);
+                newSend(["5", [secondary, true]]);
+            }, 195);
+
+            setTimeout( () => {
+                newSend(["5", [primary, true]]);
+                newSend(["5", [secondary, true]]);
+            }, 205);
+
+            setTimeout( () => {
+                newSend(["5", [primary, true]]);
+                newSend(["5", [secondary, true]]);
+            }, 215);
+
+            setTimeout( () => {
+                newSend(["5", [primary, true]]);
+                newSend(["5", [secondary, true]]);
+            }, 225);
+
+            setTimeout( () => {
+                newSend(["13c", [0, 0, 0]]);
+                newSend(["7", [1]]);
+                newSend(["5", [primary, true]]);
+                newSend(["13c", [0, 12, 0]]);
+                autoaim = false;
+            }, 230);
+            setTimeout( () => {
+                Hat(normalHat);
+                newSend(["5", [secondary, true]]);
+                acc(11);
+            }, 280);
+            setTimeout( () => {
+                newSend(["5", [primary, true]]);
+                newSend(["ch", [rmes]])
+            }, 1730);
+        }else if (instamode == "Reverse"){
+            autoprimary = false;
+            autosecondary = true;
+            autoaim = true;
+            doinsta = true;
+            newSend(["ch", [reversmes]]);
+            newSend(["13c", [0, 0, 1]]);
+            newSend(["5", [secondary, true]]);
+            newSend(["7", [1]]);
+            newSend(["13c", [1, 53, 0]]);
+            newSend(["13c", [0, 53, 0]]);
+            newSend(["13c", [1, 21, 1]]);
+            newSend(["13c", [0, 21, 1]]);
+            setTimeout( () => {
+                autoprimary = true;
+                autosecondary = false;
+                newSend(["13c", [1, 7, 0]]);
+                newSend(["13c", [0, 7, 0]]);
+                newSend(["13c", [0, 21, 1]]);
+                newSend(["5", [primary, true]]);
+                newSend(["5", [primary, true]]);
+            }, 55);
+            setTimeout( () => {
+                newSend(["13c", [0, 0, 0]]);
+                newSend(["7", [1]]);
+                newSend(["13c", [0, 11, 1]]);
+                if (myPlayer.y < 2400){
+                    newSend(["13c", [0, 15, 0]]);
+                } else if (myPlayer.y > 6850 && myPlayer.y < 7550){
+                    newSend(["13c", [0, 31, 0]]);
+                } else {
+                    newSend(["13c", [0, 12, 0]]);
+                }
+                autoprimary = false;
+                autoaim = false;
+                doinsta = false;
+                if(document.getElementById('aimbot').checked) {
+                    autoaim = true;
+                }
+                Hat(normalHat);
+                acc(11);
+            }, 215);
+            setTimeout( () => {
+                Hat(normalHat);
+                newSend(["5", [secondary, true]]);
+                acc(11);
+            }, 265);
+            setTimeout( () => {
+                newSend(["5", [primary, true]]);
+                newSend(["ch", [rmes]])
+            }, 1715);
+        }else if (instamode == "MadMod"){
+            newSend(["ch", ["*;::;*"]]);
+            autoprimary = true;
+            autosecondary = false;
+            autoaim = true;
+            autoprimary = true;
+            autosecondary = false;
+            newSend(["13c", [0, 0, 1]]);
+            newSend(["5", [primary, true]]);
+            newSend(["7", [1]]);
+            newSend(["13c", [1, 7, 0]]);
+            newSend(["13c", [0, 7, 0]]);
+            newSend(["13c", [1, 21, 1]]);
+            newSend(["13c", [0, 21, 1]]);
+        setTimeout( () => {
+            autoprimary = false;
+            autosecondary = true;
+            newSend(["13c", [0, 0, 0]]);
+            newSend(["13c", [1, 53, 0]]);
+            newSend(["13c", [0, 53, 0]]);
+            newSend(["5", [secondary, true]]);
+        }, 115);
+        setTimeout( () => {
+            newSend(["13c", [0, 0, 0]]);
+            newSend(["7", [1]]);
+            newSend(["5", [primary, true]]);
+            newSend(["13c", [0, 11, 1]]);
+            if (myPlayer.y < 2400){
+                newSend(["13c", [0, 15, 0]]);
+            } else if (myPlayer.y > 6850 && myPlayer.y < 7550){
+                newSend(["13c", [0, 31, 0]]);
+            } else {
+                newSend(["13c", [0, 12, 0]]);
+            }
+            autosecondary = false;
+            autoaim = false;
+        }, 230);
+        setTimeout( () => {
+            Hat(normalHat);
+            newSend(["5", [secondary, true]]);
+            acc(11);
+        }, 280);
+        setTimeout( () => {
+            newSend(["5", [primary, true]]);
+            newSend(["ch", [rmes]])
+        }, 1730);
+    }else if (instamode == "LagInsta"){
+        newSend(["ch", [lagmes]]);
+        autoaim = true;
+        newSend(["5", [primary, true]]);
+        newSend(["13c", [0, 7, 0]]);
+        newSend(["13c", [0, 0, 1]]);
+        newSend(["13c", [0, 21,1]]);
+        newSend(["c", [1]]);
+        setTimeout(() => {
+            var sck = "";
+            newSend(["13c", [0, 53, 0]]);
+            newSend(["5", [secondary, true]]);
+            for (let i = 0; i < 850; i++) {
+                let caas = new Uint8Array(550);
+                for (let i = 0; i < caas.length; i++) {
+                    caas[i] = Math.floor(Math.random() * 278);
+                    sck += caas[i]
+                }
+            }
+        }, 110);
+        setTimeout(() => {
+            newSend(["5", [primary, true]]);
+            newSend(["c", [0, null]]);
+            autoaim = false;
+        }, 230);
+        setTimeout(() => {
+        if(myPlayer.y < 2400){
+        newSend(["13c", [0, 11, 1]]);
+        newSend(["13c", [0, 15, 0]]);
+        } else if(myPlayer.y > 6850 && myPlayer.y < 7550){
+        newSend(["13c", [0, 11, 1]]);
+        newSend(["13c", [0, 31, 0]]);
+        } else {
+        newSend(["13c", [0, 11, 1]]);
+        newSend(["13c", [0, 12, 0]]);
+        }
+        }, 400);
+        setTimeout( () => {
+            Hat(normalHat);
+            newSend(["5", [secondary, true]]);
+            acc(11);
+        }, 450);
+        setTimeout( () => {
+            newSend(["5", [primary, true]]);
+            newSend(["ch", [rmes]])
+        }, 2000);
+    }else if (instamode == "ReverseLagInsta"){
+        newSend(["ch", [reversmes]]);
+        autoaim = true;
+    newSend(["5", [secondary, true]]);
+    newSend(["13c", [0, 53, 0]]);
+    newSend(["13c", [0, 0, 1]]);
+    newSend(["13c", [0, 21, 1]]);
+    newSend(["c", [1]]);
+    setTimeout( () => {
+    newSend(["5", [primary, true]]);
+    newSend(["13c", [0, 7, 0]]);
+    newSend(["13c", [0, 0, 1]]);
+    newSend(["13c", [0, 21, 1]]);
+    }, instaSpeed - 130);
+    setTimeout( () => {
+        var sck = "";
+        for(let i = 0; i < 750; i++){
+            let caas = new Uint8Array(550);
+            for(let i = 0; i <caas.length;i++){
+                caas[i] = Math.floor(Math.random()*278);
+                sck += caas[i]
+            }
+        }
+        }, 110);
+    setTimeout( () => {
+    newSend(["5", [primary, true]]);
+    newSend(["c", [0, null]]);
+    newSend(["13c", [0, 6, 0]]);
+    autoaim = false;
+    }, instaSpeed);
+    setTimeout(() => {
+        if(myPlayer.y < 2400){
+        newSend(["13c", [0, 11, 1]]);
+        newSend(["13c", [0, 15, 0]]);
+        } else if(myPlayer.y > 6850 && myPlayer.y < 7550){
+        newSend(["13c", [0, 11, 1]]);
+        newSend(["13c", [0, 31, 0]]);
+        } else {
+        newSend(["13c", [0, 11, 1]]);
+        newSend(["13c", [0, 12, 0]]);
+        }
+    }, 800);
+    setTimeout( () => {
+        Hat(normalHat);
+        newSend(["5", [secondary, true]]);
+        acc(11);
+    }, 850);
+    setTimeout( () => {
+        newSend(["5", [primary, true]]);
+        newSend(["ch", [rmes]])
+    }, 2300);
+    }
+    }
+        if (a.keyCode == 38 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+            messageToggle = (messageToggle + 1) % 2;
+        }
+        if (a.keyCode == 40 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+            clanToggle = (clanToggle + 1) % 2;
+        }
+        if (a.keyCode == 38 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+            messageToggle = (messageToggle + 1) % 2;
+        }
+        if (a.keyCode == 40 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+            clanToggle = (clanToggle + 1) % 2;
+        }
+        if (a.keyCode == 37 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+            healToggle = (healToggle + 1) % 2;
+            if (healToggle == 0) {
+                if (hatToggle == 0) {
+                    document.title = 'AutoHeal: OFF | AutoHat: OFF';
+                } else {
+                    document.title = 'AutoHeal: OFF | AutoHat: ON';
+                }
+            } else {
+                if (hatToggle == 0) {
+                    document.title = 'AutoHeal: ON | AutoHat: OFF';
+                } else {
+                    document.title = 'AutoHeal: ON | AutoHat: ON';
+                }
+            }
+        }
+        if (a.keyCode == 85 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+            if(primary == 0){
+                autoaim = true;
+                doinsta = true;
+                newSend(["ch", ['Age 1 Insta EZ?']]);
+                newSend(["5", [primary, true]]);
+                newSend(["13c", [1, 7, 0]]);
+                newSend(["13c", [0, 7, 0]]);
+                newSend(["13c", [0, 0, 1]]);
+                newSend(["13c", [0, 21, 1]]);
+                newSend(["c", [1]]);
+                setTimeout( () => {
+                    newSend(["6", [5]]);//polearm
+                    newSend(["6", [17]]);//cookie
+                    newSend(["6", [31]]);//trap
+                    newSend(["6", [27]]);//better mill
+                    newSend(["6", [10]]);//great hammer
+                    newSend(["6", [38]]);//tp
+                }, 25);
+
+                setTimeout( () => {
+                    newSend(["6", [4]]);//katana
+                }, 85);
+
+                setTimeout( () => {
+                    newSend(["6", [15]]);//musket
+                    autosecondary = true;
+                    newSend(["5", [secondary, true]]);
+                    newSend(["13c", [1, 53, 0]]);
+                    newSend(["13c", [0, 53, 0]]);
+                }, 90);
+
+                setTimeout( () => {
+                    autosecondary = false;
+                    newSend(["5", [primary, true]]);
+                    newSend(["c", [0, null]]);
+                    newSend(["13c", [0, 6, 0]]);
+                    autoaim = false;
+                    doinsta = false;
+                    if(document.getElementById('aimbot').checked) {
+                        autoaim = true;
+                    }
+                }, 200);
+            } else {
+                autoaim = true;
+                doinsta = true;
+                newSend(["ch", ['']]);
+                newSend(["5", [secondary, true]]);
+                newSend(["13c", [0, 21, 1]]);
+                newSend(["13c", [1, 53, 0]]);
+                newSend(["13c", [0, 53, 0]]);
+                newSend(["c", [1]]);
+
+                setTimeout( () => {
+                    newSend(["13c", [0, 21, 1]]);
+                    newSend(["13c", [0, 32, 0]]);
+                    newSend(["6", [12]]);
+
+                }, 55);
+
+                setTimeout( () => {
+                    newSend(["6", [15]]);
+
+                }, 45);
+
+                setTimeout( () => {
+                    newSend(["c", [0]]);
+                    newSend(["5", [primary, true]]);
+                    autoaim = false;
+                    doinsta = false;
+                    if(document.getElementById('aimbot').checked) {
+                        autoaim = true;
+                    }
+                Hat(normalHat);
+                acc(7);
+                }, 200);
+            }
+        }
+        if(a.keyCode == 46 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+            newSend(["6", [7]]);
+            newSend(["6", [17]]);
+            newSend(["6", [31]]);
+            newSend(["6", [27]]);
+            newSend(["6", [10]]);
+            newSend(["6", [38]]);
+            newSend(["6", [4]]);
+            newSend(["6", [15]]);
+        }
+        if(a.keyCode == 45 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+            newSend(["6", [5]]);
+            newSend(["6", [17]]);
+            newSend(["6", [31]]);
+            newSend(["6", [23]]);
+            newSend(["6", [9]]);
+            newSend(["6", [38]]);
+            newSend(["6", [28]]);
+            newSend(["6", [15]]);
+        }
+        if (a.keyCode == 98 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+            newSend(['6', [15]]);
+        }
+        if (a.keyCode == 97 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+            newSend(['6', [4]]);
+        }
+        if (a.keyCode == 99 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+            newSend(['6', [28]]);
+        }
+        if (a.keyCode == 105 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+            newSend(['6', [28]]);
+            newSend(['6', [25]]);
+        }
+    });
+    document['addEventListener']('keyup', function(a) {
+        turretPlacer['stop'](a.keyCode);
+        boostPlacer['stop'](a.keyCode);
+        spikePlacer['stop'](a.keyCode);
+        boostSpiker['stop'](a.keyCode);
+        ;
+        if (a.keyCode == 71 && document.activeElement.id.toLowerCase() !== 'chatbox') {
+            setTimeout(function() {
+                newSend(['33', [null]]);
+                boostDir = null;
+            }, 10);
+        }
+    });
+    function isElementVisible(options) {
+        return options.offsetParent !== null;
+    }
+    function toRad(degrees) {
+        return degrees * 0.01745329251;
+    }
+    function dist(p1, p) {
+        return Math.sqrt(Math.pow(p.y - p1[2], 2) + Math.pow(p.x - p1[1], 2));
+    }
+    function animate(space, chance) {
+        let result = '';
+        let characters;
+        if(space) {
+            characters = 'Peanut Is PrO';
+        } else {
+            characters = 'Peanut'
+        }
+        if(space) {
+            characters = characters.padStart((30 - characters.length) / 2 + characters.length)
+            characters = characters.padEnd(30);
+        }
+        let count = 0;
+        for (let i = 0; i < characters.length; i++ ) {
+            if(Math.floor(Math.random() * chance) == 1 && characters.charAt(i) != "-" && count < 2 && characters.charAt(i) != " ") {
+                result += "_";
+                count++
+            } else {
+                result += characters.charAt(i);
+            }
+        }
+        return result;
+    }
+    'use strict';
+    function update() {
+        var event = 0;
+        for (; event < 9; event++) {
+            if (isElementVisible(document['getElementById']('actionBarItem' + event['toString']()))) {
+                primary = event;
+            }
+        }
+        var div = 9;
+        for (; div < 16; div++) {
+            if (isElementVisible(document['getElementById']('actionBarItem' + div['toString']()))) {
+                secondary = div;
+            }
+        }
+        var tobj = 16;
+        for (; tobj < 19; tobj++) {
+            if (isElementVisible(document['getElementById']('actionBarItem' + tobj['toString']()))) {
+                foodType = tobj - 16;
+            }
+        }
+        var props = 19;
+        for (; props < 22; props++) {
+            if (isElementVisible(document['getElementById']('actionBarItem' + props['toString']()))) {
+                wallType = props - 16;
+            }
+        }
+        var e = 22;
+        for (; e < 26; e++) {
+            if (isElementVisible(document['getElementById']('actionBarItem' + e['toString']()))) {
+                spikeType = e - 16;
+            }
+        }
+        var f = 26;
+        for (; f < 29; f++) {
+            if (isElementVisible(document['getElementById']('actionBarItem' + f['toString']()))) {
+                millType = f - 16;
+            }
+        }
+        var g = 29;
+        for (; g < 31; g++) {
+            if (isElementVisible(document['getElementById']('actionBarItem' + g['toString']()))) {
+                mineType = g - 16;
+            }
+        }
+        var h = 31;
+        for (; h < 33; h++) {
+            if (isElementVisible(document['getElementById']('actionBarItem' + h['toString']()))) {
+                boostType = h - 16;
+            }
+        }
+        var intval = 33;
+        for (; intval < 39; intval++) {
+            if (isElementVisible(document['getElementById']('actionBarItem' + intval['toString']())) && intval != 36) {
+                turretType = intval - 16;
+            }
+        }
+        spawnpadType = 36;
+    }
+    ;
+    setTimeout(() => {
+    (function () {
+
+    const To = {
+                name: "Peanut Hack",
+                colors: {
+                    menuBarBackground: "rgb(35, 255, 255)",
+                    menuBarText: "rgb(0,191,255)",
+                    panelBackground: "rgb(0, 0, 0)",
+                    componentBackground: "rgb(32, 32, 32)",
+                    componentBackgroundHover: 'rgb(32, 32, 32)',
+                    componentForeground: "rgb(0,191,255)",
+                    textPrimary: "rgb(0,191,255)",
+                    textSecondary: "rgb(0,191,255)",
+                    textHover: "rgb(0, 0, 0)"
+                },
+                font: {
+                    'fontFamily': 'Baloo Paaji',
+                    'fontSize': '20px',
+                    'fontWeight': '1'
+                },
+
+            };
+            window.Utils = {
+                initUI: () => {
+                    document.body;
+                    let o = new guify({
+                        title: "Peanut Gui",
+                        theme: To,
+                        align: "right",
+                        width: 600,
+                        barMode: "none",
+                        panelMode: "none",
+                        opacity: .95,
+                        root: window.container,
+                        open: Utils.hacks.MENU.enabled
+                    });
+            o.Register({
+                        type: "folder",
+                        label: "All xd",
+                        open: !1
+                    })
+            o.Register([
+                                {
+                                type: "checkbox",
+                                label: "Aimbot (useless xd)",
+                                onChange: o => {
+                                autoaim = !autoaim
+                                silentaim = !silentaim;
+                                if(autoaim){
+                                newSend(["ch", ["Aimbot On"]]);
+                                }else{
+                                newSend(["ch", ["Aimbot 0ff"]]);
+                                }
+                                }
+                                },
+                                {
+                                type: "checkbox",
+                                label: "Say Ping",
+                                onChange: o => {
+                                    ping = !ping
+                                }
+                                },
+                                {
+                                type: "checkbox",
+                                label: "AutoHeal",
+                                property: "enabled",
+                                    object: {
+                                    enabled: uipo
+                                },
+                                onChange: o => {
+                                    healToggle = (healToggle + 1) % 2;
+                                }
+                                },
+                                {
+                                type: "checkbox",
+                                label: "Anti Insta 1",
+                                onChange: o => {
+                                    antiinsta = !antiinsta
+                                if(antiinsta){
+                                newSend(["ch", ["Anti Insta 0n"]]);
+                                }else{
+                                newSend(["ch", ["Anti Insta 0ff"]]);
+                                }
+                                }
+                                },
+                                {
+                                type: "checkbox",
+                                label: "Anti Trap",
+                                onChange: o => {
+                                    antitrap = !antitrap
+                                    autobreak = !autobreak
+                                if(antitrap){
+                                newSend(["ch", ["Anti Trap 0n"]]);
+                                }else{
+                                newSend(["ch", ["Anti Trap 0ff"]]);
+                                }
+                                }
+                                },
+                                {
+                                    type: 'select',
+                                    label: 'Anti Trap Settings',
+                                    object: instamode,
+                                    options: ['PlaceSpikes', 'PlaceMills','PlaceTraps'],
+                                    onChange: o => {
+                                        antit = o
+                                    }
+                                },
+                                {
+                                type: "checkbox",
+                                label: "Auto Q Heal (Clown)",
+                                onChange: o => {
+                                    q = !q
+                                }
+                                },
+                                {
+                                    type: 'select',
+                                    label: 'Insta Mode',
+                                    object: instamode,
+                                    options: ['Normal', 'Reverse', 'MadMod', 'LagInsta', 'ReverseLagInsta'],
+                                    onChange: o => {
+                                        instamode = o
+                                    }
+                                },
+                                {
+                                type: "checkbox",
+                                label: "Insta + Spike",
+                                onChange: o => {
+                                    pikeinsta =!pikeinsta
+                                }
+                                },
+                                {
+                                type: 'range',
+                                label: 'Heal Delai (1 = fastest)',
+                                min: 1, max: 300,
+                                object: healSpeed,
+                                onChange: o => {
+                                healSpeed = o
+                                console.log(healSpeed)
+                                }
+                                },
+                                {
+                                    type: 'text',
+                                    label: 'Insta Message (Edit)',
+                                    object: instames,
+                                    onChange: o => {
+                                        instames = "~"+o+"~"
+                                    }
+                                },
+                                {
+                                    type: 'text',
+                                    label: 'Reverse Message (Edit)',
+                                    object: reversmes,
+                                    onChange: o => {
+                                        reversmes = "~"+o+"~"
+                                    }
+                                },
+
+                                ], {
+                                folder: "All xd"
+                                })
+                },
+                controls: null,
+                controller: class {
+                    constructor() {
+                        document.addEventListener("keydown", o => {
+                            Object.keys(Utils.hacks).forEach(Q => {
+                                const O = Utils.hacks[Q];
+                                O.key === o.code && 1 == O.toggle && (O.enabled = !O.enabled), O.key === o.code && 1 != O.toggle && (O.enabled = !0)
+                            })
+                        }), document.addEventListener("keyup", o => {
+                            Object.keys(Utils.hacks).forEach(Q => {
+                                const O = Utils.hacks[Q];
+                                O.key === o.code && 1 != O.toggle && (O.enabled = !1)
+                            })
+                        })
+                    }
+                    setKeyBind(o) {
+                        Utils.hacks[o].key = "Press any key";
+                        let Q = 0;
+                        document.addEventListener("keydown", function O(i) {
+                            ++Q >= 1 && (Utils.hacks[o].key = i.code, document.removeEventListener("keydown", O), Utils.saveSettings())
+                        })
+                    }
+                },
+                saveSettings: () => {
+                    localStorage.setItem("keybinds", JSON.stringify(Utils.hacks))
+                },
+                loadSettings: () => {
+                    const o = localStorage.getItem("keybinds");
+                    if (o) {
+                        if (Object.keys(JSON.parse(o)).length != Object.keys(Utils.hacks).length) return;
+                        return Utils.hacks = JSON.parse(o), JSON.parse(o)
+                    }
+                },
+                hacks: {
+                    MENU: {
+                    enabled: !0
+                    },
+                    AutoBuilding: {
+                    key: "KeyT",
+                    enabled: !1
+                    },
+                    AutoSpike: {
+                    key: "Space",
+                    enabled: !1
+                    },
+                    Xray: {
+                    key: "KeyZ",
+                    enabled: !1
+                    }
+                },
+
+                LoadHack: () => {
+                    Utils.loadSettings(), Utils.controls = new Utils.controller;
+                    let o = document.createElement("script");
+                    o.onload = function () {
+                        Utils.initUI()
+                    }, o.src = "https://unpkg.com/guify@0.12.0/lib/guify.min.js", document.body.appendChild(o)
+                }
+            }
+
+
+    Utils.LoadHack()
+    })();
+    }, 1500)
+    var menuChange = document.createElement("div");
+    menuChange.className = "menuCard";
+    menuChange.id = "mainSettings";
+    menuChange.innerHTML = `
+            <div id="simpleModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="closeBtn">&times;</span>
+                        <h2 style="font-size: 17px;">pancake mod menu</h2>
+                    </div>
+                    <div class="modal-body" style="font-size: 15px;">
+                        <div class="flexControl">
+                        <h2 style="font-size: 17px;">Menu</h2>
+            <label type="radio" class="container">Anti Insta<input type="checkbox" id="antiinsta" checked>
+            <span class="checkmark"></span></label>
+            <label type="radio" class="container">Anti Insta 2(The other AntiInsta will be deactivated automatically)(idk if it´s good)<input type="checkbox" id="antiinsta2">
+            <span class="checkmark"></span></label>
+            <label type="radio" class="container">put pike on instakill<input type="checkbox" id="putpike">
+            <span class="checkmark"></span></label>
+    <label type="radio" class="container">360° hit<input type="checkbox" id="360hit">
+            <span class="checkmark"></span></label>
+                    <label type="radio" class="container">Auto Aim/Aim bot/Auto aim lock<input type="checkbox" id="aimbot">
+            <span class="checkmark"></span></label>
+            <label type="radio" class="container">click bull/tank<input type="checkbox" id="click">
+            <span class="checkmark"></span></label>
+            <label type="radio" class="container">auto ping msg?<input type="checkbox" id="pingy">
+            <span class="checkmark"></span></label>
+                    <label type="radio" class="container">chat mirror?<input type="checkbox" id="cm">
+            <span class="checkmark"></span></label>
+                            <label type="radio" class="container">autoreplace(trap)?(DON´T USE|NEED TO GET FIXED<input type="checkbox" id="ar">
+            <span class="checkmark"></span></label>
+            <label type="radio" class="container">damage counter(chat how many HP you have)?<input type="checkbox" id="dmgc">
+            <span class="checkmark"></span></label>
+            <label type="radio" class="container">Anti Ruby weapons/Auto venom gear if you got poisen?<input type="checkbox" id="antiruby">
+            <span class="checkmark"></span></label>
+                    <label type="radio" class="container">Auto-Q if your ping is bigger than 200 and a enemy is near?<input type="checkbox" id="autoq">
+            <span class="checkmark"></span></label>
+                            <div class="modal-body" style="font-size: 15px;">
+                        <div class="flexControl">
+                        <h2 style="font-size: 24px;">Trap settings</h2>
+            <label class="container">Anti-Pit-Trap?<input type="checkbox" id="antitrap">
+            <span class="checkmark"></span></label>
+            <label class="container">place spikes behind you if you got trapped?<input type="checkbox" id="placespike">
+            <span class="checkmark"></span></label>
+            <label class="container">place traps behind you if you got trapped?<input type="checkbox" id="placetrap">
+            <span class="checkmark"></span></label>
+            <label class="container">place mills behind you if you got trapped?<input type="checkbox" id="placemill">
+            <span class="checkmark"></span></label>
+            <label class="container">AutoBreak Pit-Trap?<input type="checkbox" id="autobreaktrap">
+                    <span class="checkmark"></span></label>
+                    <label class="container">Autoplace traps after autobreak?<input type="checkbox" id="autoplacetraps">
+                    <span class="checkmark"></span></label>
+                        </div>
+                            <div class="modal-footer">
+                <h2 class="flower">Instructions:</h2>
+                <h2 class="nothing">How to get Katana and Musket:</h2>
+                <p style="font-size: 16px;color:black">Method 1:</p>
+                <p class="tree">1.  Reach AGE 9(DON´T choose anything at AGE 9 and dont choose Better Bow at AGE 8).</p>
+                <p class="tree">2.  Now press the key 'del(ete)'.</p>
+                <p style="font-size: 16px;color:black">Method 2:</p>
+                <p class="tree">1.  Choose at AGE 2 the 'Short Sword'.</p>
+                <p class="tree">2.  Choose at AGE 8 the 'Katana'.</p>
+                <p class="tree">3.  DON´T choose anything at AGE 9 and press the key 'L'.</p>
+                <h2 class="nothing">How to make Insta-Kill:</h2>
+                <p class="tree">1.  Hold your secondary weapon 2-3 seconds in your hand.</p>
+                <p class="tree">2.  Now select your primary weapon.</p>
+                <p class="tree">Now if you want to make the insta-kill press the key 'R'</p>
+                <h2 class="nothing">Key Commandos:</h2>
+                <p class="tree"></p>
+                <p class="tree"></p>
+                <p class="tree"></p>
+                <p class="tree"></p>
+
+                </div>
+            </div>
+            `
+    document.body.appendChild(menuChange)
+    var styleItem1 = document.createElement("style");
+    styleItem1.type = "text/css";
+    styleItem1.appendChild(document.createTextNode(`
+    #mainSettings{
+        overflow-y : scroll;
+    }
+
+    .keyPressLow {
+        margin-left: 8px;
+        font-size: 16px;
+        margin-right: 8px;
+        height: 25px;
+        width: 50px;
+        background-color: #fcfcfc;
+        border-radius: 3.5px;
+        border: none;
+        text-align: center;
+        color: #4A4A4A;
+        border: 0.5px solid #f2f2f2;
+    }
+
+    p.tree {
+        font-size: 14px;
+        font-family: 'verdana';
+        text-align: left;
+        color: black;
+    }
+
+    h2.flower {
+        font-size: 20px;
+        font-family: 'Hammersmith One';
+        color: black;
+        text-align: center;
+    }
+
+    h2.nothing {
+        font-size: 30px
+        text-align: center;
+    }
+
+    .menuPrompt {
+        font-size: 17px;
+        font-family: 'Hammersmith One';
+        color: green;
+        flex: 0.2;
+        text-align: center;
+        margin-top: 10px;
+        display: inline-block;
+    }
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        overflow: auto;
+        height: 100%;
+        width: 100%;
+    }
+
+    .modal-content {
+        margin: 10% auto;
+        width: 40%;
+        box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .modal-header h2,
+    .modal-footer h3 {
+    margin: 0;
+    }
+
+    .modal-header {
+        background: #black;
+        padding: 15px;
+        color: #black;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    .modal-body {
+        padding: 10px 20px;
+        background: #orange;
+    }
+
+    .modal-footer {
+        background: #cf2727;
+        padding: 10px;
+        color: #orange;
+        text-align: center;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    .closeBtn {
+        color: #orange;
+        float: right;
+        font-size: 30px;
+        color: #orange;
+    }
+
+    .closeBtn:hover,
+    .closeBtn:focus {
+        color: #orange;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    /* Customize the label (the container) */
+    .container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    }
+
+    /* Hide the browser's default checkbox */
+    .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    }
+
+    /* Create a custom checkbox */
+    .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #FFA500;
+    }
+
+    /* On mouse-over, add a grey background color */
+    .container:hover input ~ .checkmark {
+    background-color: #FFA500;
+    }
+
+    /* When the checkbox is checked, add a red background */
+    .container input:checked ~ .checkmark {
+    background-color: #000000;
+    }
+
+    /* Create the checkmark/indicator (hidden when not checked) */
+    .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    }
+
+    /* Show the checkmark when checked */
+    .container input:checked ~ .checkmark:after {
+    display: block;
+    }
+
+    /* Style the checkmark/indicator */
+    .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    }
+
+    `))
+    document.head.appendChild(styleItem1);
+
+    var ps = document.querySelector("#placespike")
+
+    ps.addEventListener('change', function() {
+        if (this.checked) {
+            palcespikes = true;
+            newSend(["ch", ["0n"]]);
+        } else {
+            palcespikes = false;
+            newSend(["ch", ["0ff"]]);
+        }
+    })
+    var apt = document.querySelector("#autoplacetraps")
+
+    apt.addEventListener('change', function() {
+        if (this.checked) {
+            autoplacetraps = true;
+            newSend(["ch", ["0n"]]);
+        } else {
+            autoplacetraps = false;
+            newSend(["ch", ["0ff"]]);
+        }
+    })
